@@ -10,6 +10,7 @@ function App() {
       .then(res => res.json())
       .then(data => {
         let randomNum = Math.floor(Math.random() * data.length)
+        debugger;
         setQuotes(data[randomNum])
       })
   }
